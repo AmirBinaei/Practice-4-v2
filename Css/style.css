@@ -140,11 +140,18 @@ h1{
 @media screen and (max-width: 992px) {
     .box{
         width: 650px;
-        height: 400px;
+        height: 95vh;
+        max-height: 400px;
     }
     .boxPic{
         width: 140px;
         left: -22.5%;
+    }
+    .questionBox{
+        overflow: auto;
+    }
+    .questionBox::-webkit-scrollbar {
+        width: 5px;
     }
 }
 
@@ -184,14 +191,8 @@ h1{
     .questionBox{
         margin-top: 1rem;
     }
-    .questionBox{
-        overflow: auto;
-    }
     .boxTxt{
         padding: 15px 5px;
-    }
-    .questionBox::-webkit-scrollbar {
-        width: 5px;
     }
 }
 
